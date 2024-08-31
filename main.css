@@ -322,8 +322,8 @@ button:hover{
 }
 
 .close{
-  width:2.5rem;
-  height:2.5rem;
+  width:3rem;
+  height:3rem;
 
   z-index:100;
   -webkit-transform: translate3d(0,0,1px);
