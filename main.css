@@ -440,7 +440,3 @@ input::-webkit-inner-spin-button {
   border-radius:5px;
   font-size:1.2rem;
 }
-
-#phoneNumber {
-  cursor:none;
-}
