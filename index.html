@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <META NAME="robots" CONTENT="noindex, nofollow">
+         <title>Wine Education</title>
+           
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+         
+         <link rel="stylesheet" type="text/css" href="main.css">
+         <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,500' rel='stylesheet' type='text/css'>
+
+         <link rel="shortcut icon" href="favicon.ico"> 
+	 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+         <link rel="mask-icon" href="safari-pinned-tab.svg">
+         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	 <link rel="shortcut icon" href="favicon.ico" sizes="any">
+	
+</head>
+	
+<script>
+	function showModal(modalID){
+		document.body.style.overflow = 'hidden';
+		document.body.classList.add('noScroll');
+		document.getElementById('top').classList.replace('visible', 'hidden');
+		document.getElementById('content').classList.replace('visible', 'hidden');
+			
+		document.getElementById(modalID).classList.replace('hidden', 'visible');
+			
+		return;
+	}
+	function hideModal(modalID){
+		document.body.style.overflow = 'auto';
+		document.body.classList.remove('noScroll');
+		document.getElementById('top').classList.replace('hidden', 'visible');
+		document.getElementById('content').classList.replace('hidden', 'visible');
+			
+		document.getElementById(modalID).classList.replace('visible', 'hidden');
+			
+		return;
+	}
+	function setDefaultDate(){
+		 date = new Date();
+		 date.setDate(date.getDate() + 7);
+		
+		 year = date.getFullYear();
+		 month = date.getMonth()+1;
+		 day = date.getDate();
+
+		 maxMonth = month+4;
+		 maxYear = year;
+
+		 if (maxMonth > 12){
+		     maxMonth -= 12;	 
+		     maxYear++;
+		 }   
+			 
+		 document.getElementById('date').value = year + '-' + String(month).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+		 document.getElementById('date').min = year + '-' + String(month).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+		 document.getElementById('date').max = maxYear + '-' + String(maxMonth).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+
+		 return year;
+	}
+</script>
+	
+<!--–––––-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-->	
+
+<body onload="setDefaultDate()">
+	<div id="top" class="visible">
+			<div style="margin-top:10vh;">
+				<img src="images/name.svg" id="nameLogo" class="fadeIn0">
+				<div id="subheader" class="fadeIn1">WINE EDUCATION<br>SANTA BARBARA</div>
+			</div>
+			<img src="images/chevron.svg" id="chevron" class="fadeIn2">
+	</div>
+	
+	<div id="content" class="visible">	      
+		<img src="images/portrait.png" id="portrait">
+		<p id="paragraph">
+			I'm an educator empowering others to understand and assess wine for themselves so they can feel confident in the wine shop, restaurant, and winery.
+		</p>
+		<button type="button" class="button" style="margin-bottom:1.5rem;" onclick="showModal('InHomeModal')">In-Home Tastings</button>
+		<button type="button" class="button" style="margin-bottom:0;" onclick="showModal('TastingRoomModal')">Tasting Room Events</button>
+		<img src="images/divider.svg" style="display:block; width:3rem; margin:2.5rem auto;">
+                <button type="button" class="button" style="margin-top:0; margin-bottom:1.5rem;" onclick="showModal('ReservationsModal')">Reservations</button>
+		<button type="button" class="button" onclick="showModal('CertificationsModal')">Certifications</button>
+		
+		<div style="display:block;">
+			<img src="images/logo.svg" id="logo" style="width: 7.5rem;  margin:3rem auto;">
+		</div>
+	</div>
+
+<!--–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-->	
+	
+	<div id="InHomeModal" class="modal hidden">
+		
+	<div class="modalContainer">
+		<p class="title">In-Home Tastings</p>
+		
+	<div class="modalBody">
+		<div style="width:85%;">
+			When I lived in France, a friend of mine would teach me about wine while we sat around the table, cooked meals, and hung out on the patio. 
+			The experience marked me deeply, and it's one I hope to share with you. We should all get to learn about wine the way I did, in our own 
+			space with those we want there with us.
+			<br><br>
+			This is a bespoke experience, completely customizable to your tastes. There really is nothing else like it. We will discuss your vision for the event 
+			ahead of time, so that you, your friends, and your guests will have a remarkable experience.
+			<br><br>
+			The price is $75 per person, not including wine.
+			<br><br>
+			<div class="sectionHeader">Themes</div>
+			For the wines served during the tasting, here are a few themes I recommend. However, as I've said, this is completely customizable to your preferences.
+			<br><br>
+			<b>Degustation</b><br>white and red wines selected to demonstrate the principles of wine tasting<br><br>
+			<b>Chef's Kiss</b><br>wines that pair with a specific cuisine<br><br>
+			<b>The Gamut</b><br>sparkling, white, orange, rosé, red, dessert<br><br>
+			<b>All Business</b><br>wines ordered at steakhouses and seafood restaurants<br><br>
+			<b>Au Naturale</b><br>interesting, weird, and even a little funky<br><br>
+			<b>Showdown</b><br>same grapes, different countries
+			<br><br><br><br>
+		</div>
+	</div>
+		
+		<svg class="close absolute" viewBox="0 0 100 100" fill="none" stroke="#030112" stroke-width="4" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" onclick="hideModal('InHomeModal')">
+	 		<circle cx="50" cy="50" r="45"/>
+			<polygon points="30,50 60,70 60,30" stroke-linecap="round" stroke-linejoin="round"/>
+		  </svg>
+	
+	</div>	
+	</div>
+
+<!--–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+	<div id="TastingRoomModal" class="modal hidden">
+		
+	<div class="modalContainer">
+		<p class="title">Events & Trainings</p>
+		
+	<div class="modalBody">
+		<div style="width:85%;">
+			If you own or manage a wine tasting room, I provide learning sessions for your patrons using your wines to help them gain valuable wine knowledge. This 
+			allows you to provide a unique benefit to your guests that will set you apart. Your terroir and your wines will be the plumb line that marks their basis for wine knowledge.
+			<br><br>
+			I also provide trainings for tasting room associates. They will learn the basics of what influences the character of wine. Your associates will be able to 
+			provide a robust conversation that will set your service apart.
+			<br><br><br><br>
+		</div>
+	</div>
+		
+		<svg class="close absolute" viewBox="0 0 100 100" fill="none" stroke="#030112" stroke-width="4" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" onclick="hideModal('TastingRoomModal')">
+			<circle cx="50" cy="50" r="45"/>
+			<polygon points="30,50 60,70 60,30" stroke-linecap="round" stroke-linejoin="round"/>
+		  </svg>
+	
+	</div>	
+	</div>
+
+<!--––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-->
+	
+	<div id="ReservationsModal" class="modal hidden">
+		
+	<div class="modalContainer">
+		<p class="title">Reservations</p>
+		
+	<div class="modalBody" style="justify-content:center; align-items:center; overflow:hidden;">
+		
+		<form id="reservations" action="https://getform.io/f/0f7eb169-4025-4982-bcd9-870d3556430c" method="post" style="margin:0; padding:0; text-align:center;">
+			<input type="text" id="name" name="Name" placeholder="Name *" class="formQ" required>            
+			<input type="email" id="email" name="Email" placeholder="Email *" class="formQ" required>
+
+			<div class="flex-container" style="margin-bottom:1rem;">
+				<div style="width:49%;"><input type="tel" id="phone" name="Phone" placeholder="Phone" class="formInline"></div>  
+				<div style="width:2%;"></div>
+				<div style="width:49%;"><input type="tel" autocomplete="postal-code" id="zip" pattern="[0-9]{5}" name="ZIP" placeholder="Zip *" min="93101" max="93117" step="1" class="formInline" required></div>
+			</div>
+
+			<div class="flex-container" style="margin-bottom:.3rem;">
+				<div style="width:49%;"><input type="date" id="date" name="Date" value="" min="" class="formInline" ></div>
+				<div style="width:2%;"></div>
+				<div style="width:49%;"><input type="time" id="time" name="Time" value="19:00" class="formInline"></div> 
+			</div>
+                     
+			<select name="Attendees" id="attendance" class="formQ" style="margin-bottom:.3rem;">
+				<option value="" disabled selected>Number of Attendees</option>
+				<option value="4 or fewer">four or fewer</option>
+				<option value="5">five</option>
+				<option value="6">six</option>
+				<option value="7">seven</option>
+				<option value="8">eight or more</option>
+				<option value="coroporate/winery">corporate/winery</option>
+			</select>
+
+			<textarea id="details" name="Details" class="formQ" style="margin-bottom:2rem; padding-bottom:.4rem; resize:none;" rows="2" placeholder="details, preferences, selected wine themes, and other information"></textarea>
+			
+			<div style="padding:0; margin-bottom:0;">
+				<button type="submit" class="button" style="font-weight:300;">REQUEST</button>
+			</div>
+		</form>
+
+		<div>
+			<img src="images/divider.svg" style="display:block; width:3rem; margin:2rem auto 0 auto;">
+			<a href="sms:+18052595917" style="text-align:center; margin:1rem auto; width:fit-content; display:block;"><img src="images/number.svg" id="phoneNumber" style="display:block; width:9rem; margin:0;"></a>
+			<img src="images/divider.svg" style="display:block; width:3rem; margin:0 auto;">	
+		</div>
+
+	</div>
+		
+		<svg class="close absolute" viewBox="0 0 100 100" fill="none" stroke="#030112" stroke-width="4" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" onclick="hideModal('ReservationsModal')">
+			<circle cx="50" cy="50" r="45"/>
+			<polygon points="30,50 60,70 60,30" stroke-linecap="round" stroke-linejoin="round"/>
+		  </svg>
+
+	</div>	
+	</div>
+
+<!--–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+	<div id="CertificationsModal" class="modal hidden">
+		
+	<div class="modalContainer">
+		<p class="title">Certifications</p>
+		
+	<div class="modalBody">	
+		<div style="width:85%;">
+			<b style="font-size:1.3rem;">Wine & Spirits Education Trust</b>
+			<br>
+			&emsp;&emsp;&emsp;Level 3 Award in Wines
+			<br>
+			&emsp;&emsp;&emsp;passed with distinction
+			<br><br>
+			<b style="font-size:1.3rem;">Court of Master Sommeliers</b>
+			<br>
+			&emsp;&emsp;&emsp;Introductory Course
+		        <br><br>
+		</div>
+	</div>
+		
+		<svg class="close absolute" viewBox="0 0 100 100" fill="none" stroke="#030112" stroke-width="4" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" onclick="hideModal('CertificationsModal')">
+			<circle cx="50" cy="50" r="45"/>
+			<polygon points="30,50 60,70 60,30" stroke-linecap="round" stroke-linejoin="round"/>
+		  </svg>
+	
+	</div>	
+	</div>
+
+</body>	
+</html>
