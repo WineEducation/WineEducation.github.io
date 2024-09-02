@@ -325,6 +325,10 @@ button:hover{
   width:3rem;
   height:3rem;
 
+  position:absolute;
+  left:50%;
+  bottom:1.5rem;
+
   z-index:100;
   -webkit-transform: translate3d(0,0,1px);
   transform: translate3d(0,0,1px);
@@ -335,18 +339,6 @@ button:hover{
 
 .close:hover{
   stroke:#03011260;
-}
-
-.close.block{
-  display:block;
-  margin: 2rem 1rem 1rem auto;
-}
-
-.close.absolute{
-  position:absolute;
-  left:50%;
-  bottom:1.5rem;
-  transfrom: translateX(-50%);
 }
 
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
