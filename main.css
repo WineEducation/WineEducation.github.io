@@ -329,12 +329,10 @@ button:hover{
   position:absolute;
   left:50%;
   bottom:1.5rem;
-  -webkit-transform: translate(-1.5rem, 0);
-  transform: translate(-1.5rem, 0);
 
   z-index:100;
-  -webkit-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
+  -webkit-transform: translate3d(-50%,0,1px);
+  transform: translate3d(-50%,0,1px);
 
   transition-duration:0.3s;
   cursor:none;
