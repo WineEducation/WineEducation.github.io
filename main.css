@@ -284,7 +284,7 @@ button:hover{
 
 .title {
   display:block;
-  margin: 2rem auto .5rem auto;
+  margin: 2rem auto 1rem auto;
 
   font-size: 2.5rem;
   font-weight:300;
@@ -301,7 +301,7 @@ button:hover{
   overscroll-behavior: contain;
 
   margin:0;
-  padding:2rem 0 1rem 0;
+  padding:0 0 1rem 0;
   width:auto;
   
   font-size:1rem;
