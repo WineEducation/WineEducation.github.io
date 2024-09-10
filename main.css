@@ -328,11 +328,12 @@ button:hover{
   height:3rem;
 
   position:absolute;
+  right:50%;
   bottom:3rem;
 
   z-index:100;
-  -webkit-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
+  -webkit-transform: translate3d(-50%,0,1px);
+  transform: translate3d(-50%,0,1px);
 
   stroke:#03011280;
   fill:none;
@@ -343,8 +344,8 @@ button:hover{
 .close:hover{
   stroke:#03011220;
   fill:none;
-  transform: translateX(-1rem);
-  -webkit-transform: translatex(-1rem);
+  transform: translate3d(0,0,1px);
+  -webkit-transform: translate3d(0,0,1px);
   transition-duration:0.8s;
 }
 
