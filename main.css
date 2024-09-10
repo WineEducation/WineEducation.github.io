@@ -334,14 +334,15 @@ button:hover{
   -webkit-transform: translate3d(-50%,0,1px);
   transform: translate3d(-50%,0,1px);
 
-  stroke:#ffffff;
-  fill:none;
+  stroke:none;
+  fill:#aaaaaa;
   transition-duration:0.8s;
   cursor:none;
 }
 
 .close:hover{
-  stroke:#030112;
+  stroke:#03011230;
+  fill:none;
   transition-duration:0.8s;
 }
 
