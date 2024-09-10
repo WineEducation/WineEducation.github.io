@@ -328,7 +328,7 @@ button:hover{
   height:3rem;
 
   position:absolute;
-  left:50%;
+  right:50%;
   bottom:3rem;
 
   z-index:100;
@@ -344,7 +344,7 @@ button:hover{
 .close:hover{
   stroke:#03011220;
   fill:none;
-  transform: translateX(1rem);
+  transform: translateX(-1rem);
   transition-duration:0.8s;
 }
 
