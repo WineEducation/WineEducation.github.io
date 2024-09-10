@@ -342,7 +342,6 @@ button:hover{
 }
 
 .close:hover{
-  stroke:#03011220;
   fill:none;
   transform: translate3d(-60%,0,1px);
   -webkit-transform: translate3d(-60%,0,1px);
