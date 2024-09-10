@@ -345,7 +345,7 @@ button:hover{
   stroke:#03011220;
   fill:none;
   transform: translate3d(-100%,0,1px);
-  -webkit-transform: translate3d(100%,0,1px);
+  -webkit-transform: translate3d(-100%,0,1px);
   transition-duration:0.8s;
 }
 
