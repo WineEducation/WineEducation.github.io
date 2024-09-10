@@ -89,7 +89,7 @@ button {
 }
 
 button:hover{
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition-duration:0.8s;
 }
 
@@ -449,6 +449,6 @@ input::-webkit-inner-spin-button {
 
 
 #phoneNumber:hover{
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition-duration:0.8s;
 }
