@@ -330,7 +330,7 @@ button:hover{
   position:absolute;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
+  left: 3rem;
   right: 0;
   bottom:3rem;
   text-align: center;
@@ -349,7 +349,7 @@ button:hover{
 .close:hover{
   stroke:#03011220;
   fill:none;
-  transform: translateX(-1rem);
+  transform: translateX(1rem);
   transition-duration:0.8s;
 }
 
