@@ -441,6 +441,11 @@ input::-webkit-inner-spin-button {
   font-size:1.2rem;
 }
 
+#phoneNumber{
+  transition-duration:0.8s;
+}
+
+
 #phoneNumber:hover{
   stroke:#03011260;
   transform: scale(1.2);
