@@ -90,7 +90,7 @@ button {
 
 button:hover{
   color: #03011260;
-  scale:1.2;
+  transform: scale(1.2);
   transition-duration:0.8s;
 }
 
