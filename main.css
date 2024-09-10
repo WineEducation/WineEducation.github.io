@@ -343,6 +343,10 @@ button:hover{
 
 .close:hover{
   fill:none;
+
+  -webkit-transform: translate3d(-60%,0,1px);
+  transform: translate3d(-60%,0,1px);
+  
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
   
