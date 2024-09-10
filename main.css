@@ -442,6 +442,7 @@ input::-webkit-inner-spin-button {
 }
 
 #phoneNumber{
+  cursor:none;
   transition-duration:0.8s;
 }
 
