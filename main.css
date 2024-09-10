@@ -324,12 +324,12 @@ button:hover{
 }
 
 .close{
-  width:3rem;
-  height:3rem;
+  width:2rem;
+  height:2rem;
 
   position:absolute;
   left:50%;
-  bottom:3rem;
+  bottom:2rem;
 
   z-index:100;
   -webkit-transform: translate3d(-50%,0,1px);
@@ -343,12 +343,11 @@ button:hover{
 
 .close:hover{
   fill:none;
-
-  -webkit-transform: translate3d(200%,0,1px);
-  transform: translate3d(200%,0,1px);
   
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
+
+  -webkit-transform:translateX(-1.
   
   transition-duration:0.8s;
 }
