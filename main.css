@@ -344,7 +344,7 @@ button:hover{
 .close:hover{
   stroke:#03011220;
   fill:none;
-  transform: translateX(-3rem);
+  transform: translateX(-1rem);
   transition-duration:0.8s;
 }
 
