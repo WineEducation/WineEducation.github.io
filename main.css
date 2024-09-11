@@ -324,12 +324,12 @@ button:hover{
 }
 
 .close{
-  width:2.5rem;
-  height:2.5rem;
+  width:3rem;
+  height:3rem;
 
   position:absolute;
   left:50%;
-  bottom:2.5rem;
+  bottom:3rem;
 
   z-index:100;
   -webkit-transform: translate3d(-50%,0,1px);
