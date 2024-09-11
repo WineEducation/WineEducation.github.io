@@ -1,12 +1,5 @@
-<svg width="562" height="250" viewBox="0 0 562 250" stroke="#030112" stroke-width="2" fill="none" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
-<!--   <style>
-        @media (prefers-color-scheme: dark) {
-            circle { stroke: #E9DCC990; }
-	    line { stroke: #E9DCC990; } 
-        }
-    </style>
--->
-	
+<svg width="562" height="239" viewBox="0 0 562 239" stroke="#030112" stroke-width="2" fill="none" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+
 <!-- G -->
 
   <circle cx="55" cy="55" r="50" pathLength="100" stroke-dasharray="90 100"/>
