@@ -344,8 +344,8 @@ button:hover{
 .close:hover{
   fill:none;
 
-  -webkit-transform: translate3d(-50%,0,1px) scale(1.2);
-  transform: translate3d(-50%,0,1px) scale(1.2);
+  -webkit-transform: translate3d(-50%,0,1px) scale(1.05);
+  transform: translate3d(-50%,0,1px) scale(1.05);
   
   transition-duration:0.8s;
 }
