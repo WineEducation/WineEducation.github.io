@@ -22,6 +22,7 @@ body {
   font-family: Quicksand;
   color:#030112;
   background-color:#E9DCC9;
+  cursor:default;
 
   touch-action: pan-y;
   -ms-touch-action: pan-y;
@@ -75,7 +76,7 @@ button {
   
   width:fit-content;
   height:fit-content;
-  transition-duration:0.8s;
+  transition-duration:0.6s;
 
   background-color: transparent;
   border:none;
@@ -85,12 +86,11 @@ button {
   font-variant:small-caps;
   letter-spacing:.1rem;
   text-align: center;
-  cursor: none;
 }
 
 button:hover{
-  transform: scale(1.05);
-  transition-duration:0.8s;
+  transform: scale(1.1);
+  transition-duration:0.6s;
 }
 
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -298,7 +298,6 @@ button:hover{
   Flex:1;
 
   position:relative;
-  cursor:default;
   overscroll-behavior: contain;
 
   margin:0;
@@ -314,7 +313,6 @@ button:hover{
 }
 
 .sectionHeader {
-  cursor:default;
   
   margin:1.5rem auto 1rem auto;
   text-align:center;
@@ -337,8 +335,7 @@ button:hover{
 
   stroke:#03011290;
   fill:none;
-  transition-duration:0.8s;
-  cursor:none;
+  transition-duration:0.6s;
 }
 
 .close:hover{
@@ -347,7 +344,7 @@ button:hover{
   -webkit-transform: translate3d(-50%,0,1px) scale(1.1);
   transform: translate3d(-50%,0,1px) scale(1.1);
   
-  transition-duration:0.8s;
+  transition-duration:0.6s;
 }
 
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -444,12 +441,11 @@ input::-webkit-inner-spin-button {
 }
 
 #phoneNumber{
-  cursor:none;
-  transition-duration:0.8s;
+  transition-duration:0.6s;
 }
 
 
 #phoneNumber:hover{
-  transform: scale(1.05);
-  transition-duration:0.8s;
+  transform: scale(1.1);
+  transition-duration:0.6s;
 }
